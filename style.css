@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #bae6d3;
 }
 
 .navbar {
@@ -48,17 +48,13 @@ body {
     }
 }
 
-@media (min-width: 1024) {
-    body {
-        background-color: aqua;
-    }
-
+@media (min-width: 1024px) {
     .navbar__brand {
-        width: 300px;
+        width: 150px;
     }
 
     .nav__item {
-        padding: 20px;
+        padding: 10px;
         font-size: 20px;
     }
 }
