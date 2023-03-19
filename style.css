@@ -13,6 +13,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    padding: 10px;
+    border-radius: 0 0 8% 8%;
 
 }
 
@@ -24,7 +26,7 @@ body {
     width: 100%;
 }
 
-.nav__item {
+.button__primary {
     background-image: linear-gradient(to right,
             #ff512f 0%,
             #dd2476 51%,
@@ -36,16 +38,101 @@ body {
     font-weight: 600;
 }
 
-.nav__item:hover {
+.button__primary:hover {
     border: 2px solid #ff6767;
     cursor: pointer;
 }
 
+.container {
+    padding: 20px;
+}
+
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.hero__text {
+    font-size: 32;
+    margin: 20px 0px;
+    color: #1d3557;
+    font-weight: 800;
+}
+
+.food__card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+
+.food__card__image__cointainer {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.explore__menu__text {
+    margin: 25px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
 @media (min-width: 768px) {
+    .explore__menu__lists {
+        margin-top: 40px;
+        display: flex;
+        gap: 15px;
+        padding: 0 30px;
+
+    }
+
+    .explore__menu__container {
+        position: relative;
+        padding: 40px 0;
+    }
+
+    .explore__menu__gradient__bg {
+        position: absolute;
+        z-index: -1;
+        top: 50px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right,
+                #ff512f 0%,
+                #dd2476 51%,
+                #ff512f 100%);
+        transform: skewY(-5deg);
+    }
+
+    .moveup {
+        margin-top: -25px;
+        margin-bottom: 30px;
+    }
+
     .navbar {
         justify-content: space-between;
         padding: 10px 30px;
     }
+
+    .hero__container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -53,7 +140,7 @@ body {
         width: 150px;
     }
 
-    .nav__item {
+    .button__primary {
         padding: 10px;
         font-size: 20px;
     }
