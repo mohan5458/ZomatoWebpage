@@ -31,7 +31,34 @@ body {
             #ff512f 100%);
     color: #fff;
     border: none;
-    border-radius: 6px;
     padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
 
+.nav__item:hover {
+    border: 2px solid #ff6767;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 1024) {
+    body {
+        background-color: aqua;
+    }
+
+    .navbar__brand {
+        width: 300px;
+    }
+
+    .nav__item {
+        padding: 20px;
+        font-size: 20px;
+    }
 }
